@@ -1,0 +1,47 @@
+/*Navigation*/
+.nav
+  font-family: 'firasans_regular'
+  font-size: 18px
+  text-align: right
+
+  &__list
+    margin: 0
+    padding: 0
+    list-style: none
+
+  &__item
+    position: relative
+
+    &:after
+      content: ''
+      position: absolute
+      top: 0
+      right: 0
+      display: block
+      width: 6px
+      height: 100%
+      background: transparent
+
+    &.is-active:after
+      content: ''
+
+      background: $primary
+      background: linear-gradient(to bottom, lighten($primary, 5%), darken($primary, 5%))
+
+    &.is-active .nav__link
+      color: $primary
+
+    &.is-active .nav__link
+      font-family: firasans_bold
+
+  &__link
+    padding: 9px 29px 8px 0
+    display: block
+    text-decoration: none
+    color: $foreground
+
+    &:hover
+      color: $primary
+
+  &__icon
+    margin-right: 4px

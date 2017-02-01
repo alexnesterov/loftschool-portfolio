@@ -1,0 +1,35 @@
+// Colors
+$background: #f6f6f6
+$foreground: #414141
+$foreground-light: #727272
+$primary: #33c1e3
+$secondary: #e85f61
+
+// Helpers
+%clearfix
+  &:after
+    content: ''
+    display: table
+    clear: both
+
+// Layout
+@import layout/normalize
+@import layout/font-awesome
+@import layout/fonts
+@import layout/adjustment
+
+// Sections
+@import sections/hello
+@import sections/header
+@import sections/footer
+@import sections/content
+@import sections/sidebar
+
+@import sections/about
+@import sections/career
+@import sections/portfolio
+
+// Media
+@import media/laptop
+@import media/tablets
+@import media/phones

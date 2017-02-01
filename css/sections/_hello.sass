@@ -1,0 +1,88 @@
+.hello
+  position: absolute
+  top: 0
+  right: 0
+  bottom: 0
+  left: 0
+  text-align: center
+
+  &:before
+    content: ''
+    display: inline-block
+    width: 0
+    height: 100%
+    vertical-align: middle
+
+  &__block
+    display: inline-block
+    width: 300px
+    margin-top: 70px
+    vertical-align: middle
+    box-shadow: 0px 1px 2px #e6e6e7
+    border-radius: 10px
+    opacity: 0
+
+  &__auth
+    position: relative
+    padding-top: 70px
+    border-radius: 10px 10px 0 0
+
+  &__btn
+    padding: 20px 60px
+    background: $primary
+    border-radius: 0 0 10px 10px
+
+.auth
+  background: #fff
+
+  &__avatar
+    position: absolute
+    top: -70px
+    left: 50%
+    width: 140px
+    height: 140px
+    margin-left: -70px
+    border: 2px solid #bebebe
+    border-radius: 50%
+    overflow: hidden
+
+  &__img
+    max-width: 100%
+    max-height: 100%
+
+  &__name
+    margin: 0 auto
+    padding: 20px 60px
+    font-size: 21px
+    line-height: 28px
+    font-weight: normal
+
+// Animation
+@keyframes bounceIn
+  from, 20%, 40%, 60%, 80%, to
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000)
+
+  0%
+    opacity: 0
+    transform: scale3d(.3, .3, .3)
+
+  20%
+    transform: scale3d(1.1, 1.1, 1.1)
+
+  40%
+    transform: scale3d(.9, .9, .9)
+
+  60%
+    opacity: 1
+    transform: scale3d(1.03, 1.03, 1.03)
+
+  80%
+    transform: scale3d(.97, .97, .97)
+
+  to
+    opacity: 1
+    transform: scale3d(1, 1, 1)
+
+.bounceIn
+  animation: bounceIn 1s
+  opacity: 1

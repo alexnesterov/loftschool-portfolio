@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Обо мне</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="./css/main.css">
+</head>
+<body class="page page--hello">
+  <!--[if lte IE 9]>
+    <p class="browsehappy">Вы используете устаревшую версию браузера!<br> Скачайте последнюю версию любого браузера на сайте <a href="//browsehappy.com/" title="" target="_blank">browsehappy.com</a></p>
+  <![endif]-->
+  <div class="hello">
+    <div class="hello__block">
+      <div class="hello__auth auth">
+        <div class="auth__avatar">
+          <img class="auth__img" src="img/content/avatar_lg.jpg" alt="Аватар">
+        </div>
+        <h1 class="auth__name">Александр Нестеров</h1>
+      </div>
+      <div class="hello__btn">
+        <a href="./about.html" class="download-btn download-btn--blue">Перейти на сайт</a>
+      </div>
+    </div>
+  </div>
+  <script>
+    window.onload = function () {
+      document.querySelector('.hello__block').classList.add('bounceIn');
+    };
+  </script>
+</body>
+</html>

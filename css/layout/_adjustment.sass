@@ -1,0 +1,115 @@
+/*Reset box-sizing*/
+html
+  box-sizing: border-box
+
+*,
+*:before,
+*:after
+  box-sizing: inherit
+
+/*Browsehappy*/
+.browsehappy
+  margin: 0
+  padding: 20px 0
+  text-align: center
+  color: #e85f61
+  background: #333
+
+  a
+    display: inline-block
+    padding: 2px 0
+    line-height: 1
+    color: #32C1E3
+    border-bottom: 1px solid #32C1E3
+    text-decoration: none
+
+    &:hover
+      color: #333
+      background: #32C1E3
+
+/*Page layout*/
+html,
+body
+  height: 100%
+
+.page
+  min-width: 320px
+  font-family: 'firasans_regular', Arial, sans-serif
+  font-size: 16px
+  line-height: 1.6
+  background: $background
+
+  &--hello
+    background: url('../img/bg/bg.jpg') top center
+
+  &__wrap
+    position: relative
+    min-height: 100%
+    margin-bottom: -50px
+    overflow: hidden
+
+    &:after
+      content: ''
+      display: block
+      height: 50px
+
+  &__footer
+    position: relative
+    background: $foreground
+    height: 50px
+
+/*Container*/
+.container
+  margin: 0 auto
+  padding: 0 10px
+  width: 960px
+  @extend %clearfix
+
+/*Page title*/
+.page-title
+  margin: 0
+  margin-bottom: 22px
+  font-weight: normal
+  font-family: 'firasans_medium', Arial, sans-serif
+  font-size: 35px
+  line-height: 1.2
+  color: $foreground
+
+/*Text*/
+.text
+  font-family: 'firasans_light', Arial, sans-serif
+  font-size: 18px
+  line-height: 26px
+  color: #646464
+
+  p
+    margin: 0
+    margin-bottom: 7px
+
+/*Buttons*/
+.download-btn
+  padding: 11px 12px
+  color: $secondary
+  border: 2px solid $secondary
+  text-decoration: none
+  display: inline-block
+  font-family: 'Open Sans', Arial, sans-serif
+  font-size: 14px
+  font-weight: 700
+  line-height: 1
+  border-radius: 20px
+
+  &:hover
+    color: #fff
+    background: $secondary
+
+  &__icon
+    margin-right: 10px
+
+  &--blue
+    color: #fff
+    border: 2px solid #fff
+
+    &:hover
+      color: $primary
+      background: #fff
